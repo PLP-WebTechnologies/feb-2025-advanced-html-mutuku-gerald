@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Ordered List with Roman Numerals</h2>
+        <ol type="I">
+            <li>Introduction</li>
+            <li>Features</li>
+            <li>Benefits</li>
+            <li>Conclusion</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+        <h2>External Image from Pexels</h2>
+        <img src="https://images.pexels.com/photos/3807699/pexels-photo-3807699.jpeg" alt="Beautiful Landscape" width="600">
+    </section>
+
+    <!-- Table of 5 contacts -->
+    <section>
+        <h2>Contact Information</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gerald Mutuku</td>
+                    <td>123 Elm Street</td>
+                    <td>(555) 123-4567</td>
+                    <td>gerald.mutuku@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Philip Oguya</td>
+                    <td>456 Oak Avenue</td>
+                    <td>(555) 234-5678</td>
+                    <td>philip.oguya@yahoo.com</td>
+                </tr>
+                <tr>
+                    <td>Dennis Ouma</td>
+                    <td>789 Pine Road</td>
+                    <td>(555) 345-6789</td>
+                    <td>dennis.ouma@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Elvin Makori</td>
+                    <td>101 Maple Drive</td>
+                    <td>(555) 456-7890</td>
+                    <td>elvin.makori@yahoo.com</td>
+                </tr>
+                <tr>
+                    <td>Gerald Mutuku</td>
+                    <td>202 Birch Lane</td>
+                    <td>(555) 567-8901</td>
+                    <td>gerald.mutuku@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <fieldset class="form-section">
+                <legend>Personal Information</legend>
+
+                <!-- Name Field -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <!-- Email Field -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <!-- Password Field -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <!-- Date Field -->
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </fieldset>
+
+            <fieldset class="form-section">
+                <legend>Additional Information</legend>
+
+                <!-- Dropdown Field -->
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="kenya">Kenya</option>
+                    <option value="uganda">Uganda</option>
+                    <option value="tanzania">Tanzania</option>
+                </select>
+
+                <!-- Radio Button Field -->
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+
+                <!-- Checkbox Field -->
+                <label for="newsletter">Subscribe to Newsletter:</label>
+                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+</body>
+</html>
